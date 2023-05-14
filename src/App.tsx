@@ -14,7 +14,7 @@ const Layout = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowFooter(true);
-    }, 7000);
+    }, 4500);
 
     return () => clearTimeout(timer);
   }, []);

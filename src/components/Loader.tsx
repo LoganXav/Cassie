@@ -74,7 +74,7 @@ const Loader: React.FC<Props> = ({ setLoading }) => {
         <motion.div variants={itemMain} className="transition-image">
           <motion.img
             layoutId="main-image-1"
-            src="../../public/images/image-2.jpg"
+            src="/images/image-2.jpg"
           />
         </motion.div>
         <ImageBlock variants={item} id="image-3" />
@@ -101,8 +101,8 @@ export const ImageBlock: React.FC<ImageBlockProps> = ({
       }}
     >
       <Image
-        src={`../../public/images/${id}.webp`}
-        fallback={`../../public/images/${id}.jpg`}
+        src={`images/${id}.webp`}
+        fallback={`/images/${id}.jpg`}
         // src={import.meta.env.PUBLIC_URL + `/images/${id}.webp`}
         // fallback={import.meta.env.PUBLIC_URL + `/images/${id}.jpg`}
         alt={id}
