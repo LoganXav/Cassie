@@ -1,4 +1,4 @@
-import { motion, AnimateSharedLayout, AnimatePresence, LayoutGroup } from "framer-motion";
+import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import { useEffect, useState } from "react";
 
 // Components
