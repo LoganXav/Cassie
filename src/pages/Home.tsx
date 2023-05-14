@@ -1,4 +1,3 @@
-// import "./Home.scss"
 import { motion, AnimateSharedLayout, AnimatePresence, LayoutGroup } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -7,7 +6,6 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Loader from "../components/Loader";
 
-import { Services } from "../components/Services"
 import { Awards } from "../components/Awards"
 import { Team } from "../components/Team"
 import { Pricing } from "../components/Pricing"
@@ -19,7 +17,6 @@ export const Home: React.FC = () => {
     const bodyElement: HTMLBodyElement = document.querySelector(
       "body"
     )!;
-    console.log(bodyElement)
     if (bodyElement) {
       if (loading) {
         bodyElement.classList.add("loading");
@@ -50,7 +47,6 @@ export const Home: React.FC = () => {
                 />
               </div>
             )}
-            <Services />
             <Awards />
             <Team />
             <Pricing />

@@ -44,23 +44,23 @@ export const Awards: React.FC = () => {
   return (
     <div className="awards-container">
       <div className="awards">
-        <thead>
-          <tr className="table-row">
-            <th className="">Awards</th>
-            <th className="">Categories</th>
-            <th className="">Location</th>
-            <th className="">Year</th>
-          </tr>
-        </thead>
+        <div className="thead">
+          <div className="table-row">
+            <div className="th">Awards</div>
+            <div className="th">Categories</div>
+            <div className="th">Location</div>
+            <div className="th">Year</div>
+          </div>
+        </div>
         {table.map((award) => (
-          <tbody key={award.id}>
-            <tr className="table-row">
-              <td><h2>{award.name}</h2></td>
-              <td>{award.category}</td>
-              <td>{award.location}</td>
-              <td>{award.year}</td>
-            </tr>
-          </tbody>
+          <div className="tbody" key={award.id}>
+            <div className="table-row">
+              <div className="td"><h2>{award.name}</h2></div>
+              <div className="td">{award.category}</div>
+              <div className="td">{award.location}</div>
+              <div className="td">{award.year}</div>
+            </div>
+          </div>
         ))}
       </div>
     </div>

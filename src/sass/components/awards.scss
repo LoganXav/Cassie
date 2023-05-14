@@ -11,8 +11,8 @@
         flex-direction: column;
         gap: 1rem;
       }
-    thead,
-    tbody {
+    .thead,
+    .tbody {
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -28,7 +28,7 @@
       @media (max-width: 1024px) {
         flex-direction: column;
       }
-      th {
+      .th {
         width: 19rem;
         padding: 1.5rem 0;
         text-align: left;
@@ -39,7 +39,7 @@
             display: none;
           }
       }
-      td {
+      .td {
         text-align: left;
         padding: 3.2rem 0;
         font-size: 1.5rem;

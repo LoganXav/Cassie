@@ -61,10 +61,12 @@ const AnimatedLetters: React.FC<Props> = ({ title, disabled }) => {
     variants={variants1}
     initial='initial'
     animate='animate'>
-    {[...title].map((letter) => (
+    {[...title].map((letter, index) => (
       <motion.span
         className='row-letter'
-        variants={variants2}>
+        variants={variants2}
+        key={index}>
+
         {letter}
       </motion.span>
     ))}
@@ -136,7 +138,7 @@ const BannerRowCenter: React.FC<Props> = ({ title, playMarquee }) => {
       <motion.div
         initial={{ y: 310 }}
         animate={{ y: 0 }}
-        transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1 }}
+        transition={{ ease: [0.6, 0.01, 0.0, 0.9], duration: 1 }}
         className='marquee__inner'>
         <AnimatedLetters title={title} disabled />
         <AnimatedLetters title={title} />
