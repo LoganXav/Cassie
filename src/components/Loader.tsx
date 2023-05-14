@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion, Variants } from "framer-motion";
 
 import Image from "./Image";
