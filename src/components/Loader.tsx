@@ -74,7 +74,7 @@ const Loader: React.FC<Props> = ({ setLoading }) => {
         <motion.div variants={itemMain} className="transition-image">
           <motion.img
             layoutId="main-image-1"
-            src="/images/image-2.jpg"
+            src="images/image-2.jpg"
           />
         </motion.div>
         <ImageBlock variants={item} id="image-3" />
