@@ -42,7 +42,7 @@ export const Home: React.FC = () => {
               <div className="transition-image final">
                 <motion.img
                   transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1.6 }}
-                  src='../../public/images/image-2.jpg'
+                  src='images/image-2.jpg'
                   layoutId="main-image-1"
                 />
               </div>

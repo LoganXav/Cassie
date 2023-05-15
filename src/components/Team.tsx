@@ -19,7 +19,7 @@ export const Team: React.FC = () => {
     {
       id: 2,
       name: "Hannah Hill",
-      img: "https://media.istockphoto.com/id/1432226243/photo/happy-young-woman-of-color-smiling-at-the-camera-in-a-studio.jpg?b=1&s=170667a&w=0&k=20&c=HnVO0QRDl31Jb7HI7ly-Kepn58TzM_TwYpHMsktn9do=",
+      img: "https://media.istockphoto.com/id/1336160947/photo/happy-african-american-photographer-holding-a-camera-and-smiling.jpg?b=1&s=170667a&w=0&k=20&c=6H6lZh5uDZ7DGX9L5RtlA8PwSi_oYbaVq60YNpBhRbM=",
       role: "Photographer",
     },
     {
