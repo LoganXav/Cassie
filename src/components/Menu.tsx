@@ -26,7 +26,7 @@ export const Menu: React.FC<StateProp> = ({ setMenuOpen }) => {
   return (
     <>
       <div  className="menu-container">
-        <motion.div ref={menuRef} className="menu" initial={{x: 100}} animate={{x: 0}} transition={transition}>
+        <motion.div ref={menuRef} className="menu" initial={{x: 500}} animate={{x: 0}} transition={transition}>
           <div className="menu-inner">
             <div className="logo">
               <h2>ca</h2>
