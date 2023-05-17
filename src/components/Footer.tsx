@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
         </div>
         <div className="bottom">
           <div className="logo">
-            <h2>cassie</h2>
+            <h2>ca</h2>
             <span>PHOTOGRAPHY</span>
           </div>
           <h3>FEEL FREE TO CONTACT US ON SOCIAL MEDIA</h3>
