@@ -3,7 +3,7 @@ import {  motion } from "framer-motion";
 
 export const Team: React.FC = () => {
   interface Member {
-    id: string;
+    id: number;
     firstName: string;
     lastName: string;
     img: string;
@@ -13,28 +13,28 @@ export const Team: React.FC = () => {
 
   members = [
     {
-      id: "1",
+      id: 1,
       firstName: "Stacy",
       lastName: "Morgan",
       img: "https://media.istockphoto.com/id/1398994132/photo/happy-businesswoman-using-a-digital-tablet-young-leading-businesswoman-using-a-wireless.jpg?b=1&s=170667a&w=0&k=20&c=z-tvJG0r-SNUrIGwZb7YjLI9f_cOnkN30vcPafskrkQ=",
       role: "Creative Director",
     },
     {
-      id: "2",
+      id: 2,
       firstName: "Hannah",
       lastName: "Hill",
       img: "https://media.istockphoto.com/id/1336160947/photo/happy-african-american-photographer-holding-a-camera-and-smiling.jpg?b=1&s=170667a&w=0&k=20&c=6H6lZh5uDZ7DGX9L5RtlA8PwSi_oYbaVq60YNpBhRbM=",
       role: "Photographer",
     },
     {
-      id: "3",
+      id: 3,
       firstName: "Irene",
       lastName: "Paige",
       img: "https://media.istockphoto.com/id/1450788989/photo/portrait-of-happy-african-businesswoman-holding-digital-tablet-in-the-office.jpg?b=1&s=170667a&w=0&k=20&c=zkLn4o1T0CMCXmTQZlwheJDYuW9fOXXkvTJ9zbl3sCs=",
       role: "Editor",
     },
     {
-      id: "4",
+      id: 4,
       firstName: "John",
       lastName: "Anderson",
       img: "https://media.istockphoto.com/id/482100176/photo/confident-in-his-business-ability.jpg?b=1&s=170667a&w=0&k=20&c=t62jCkHRoFB2LeXDOWBWuXmJzUR3N4taHuuiTZnMcxY=",

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-// import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion"
 
 interface StateProp {
   setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -21,10 +21,12 @@ export const Menu: React.FC<StateProp> = ({ setMenuOpen }) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [menuRef]);
+
+  const transition = { duration: .7, ease: [0.9, 0.9, 0.9, 0.96] };
   return (
     <>
       <div  className="menu-container">
-        <div ref={menuRef} className="menu">
+        <motion.div ref={menuRef} className="menu" initial={{x: 100}} animate={{x: 0}} transition={transition}>
           <div className="menu-inner">
             <div className="logo">
               <h2>ca</h2>
@@ -52,7 +54,7 @@ export const Menu: React.FC<StateProp> = ({ setMenuOpen }) => {
               <span>IG</span>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
