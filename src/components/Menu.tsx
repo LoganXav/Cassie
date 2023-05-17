@@ -22,11 +22,11 @@ export const Menu: React.FC<StateProp> = ({ setMenuOpen }) => {
     };
   }, [menuRef]);
 
-  const transition = { duration: .7, ease: [0.9, 0.9, 0.9, 0.96] };
+  const transition = { duration: .5, ease: [0.9, 0.9, 0.9, 0.96] };
   return (
     <>
       <div  className="menu-container">
-        <motion.div ref={menuRef} className="menu" initial={{x: 500}} animate={{x: 0}} transition={transition}>
+        <motion.div ref={menuRef} className="menu" initial={{x: 300}} animate={{x: 0}} transition={transition}>
           <div className="menu-inner">
             <div className="logo">
               <h2>ca</h2>
