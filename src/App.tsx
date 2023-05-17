@@ -1,29 +1,17 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Outlet,
-} from "react-router-dom";
-import { useEffect, useState } from "react"
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+
+import { AnimatePresence } from "framer-motion";
+
 import { Home } from "./pages/Home";
-import { Footer } from "./components/Footer";
+import Header from "./components/Header";
+import { Profile } from "./pages/Profile";
 import "./sass/main.scss";
 
 const Layout = () => {
-  const [showFooter, setShowFooter] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowFooter(true);
-    }, 4500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="app">
-      {/* <Navbar /> */}
+      <Header />
       <Outlet />
-      {showFooter && <Footer />}
     </div>
   );
 };
@@ -37,6 +25,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      {
+        path: "/profile/:id",
+        element: <Profile />,
+      },
     ],
   },
 ]);
@@ -44,16 +36,11 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div>
-      <RouterProvider router={router} />
+      <AnimatePresence mode="wait">
+        <RouterProvider router={router} />
+      </AnimatePresence>
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-

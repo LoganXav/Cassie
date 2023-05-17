@@ -1,4 +1,4 @@
-import "../sass/components/footer.scss";
+import { motion } from "framer-motion";
 
 export const Footer: React.FC = () => {
   return (
@@ -40,13 +40,13 @@ export const Footer: React.FC = () => {
             <div className="buttons">
               <span>FB</span>
               <span>TW</span>
-              <span>PN</span>
+              <span>IG</span>
             </div>
             <a href="#">cassiaphotography@gmail.com</a>
           </div>
         </div>
         <div className="cc">
-          <span>©2023 Cassia Interactive</span>
+          <span>©2023 Cassia Photography</span>
           <span>LOGAN</span>
         </div>
       </div>
